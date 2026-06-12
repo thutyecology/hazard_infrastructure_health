@@ -10,8 +10,8 @@ This repository contains the data and code supporting the manuscript:
 
 ```
 ├── data/
-│   ├── hazard_exposure_infrastructure_access_country_level.xlsx   # Country-level hazard exposure, infrastructure access, and CHEI
-│   ├── hazard_exposure_infrastructure_access_county_level.xlsx    # County-level equivalents
+│   ├── hazard_exposure_infrastructure_access_country_level.xlsx   # Country-level hazard exposure and infrastructure access
+│   ├── hazard_exposure_infrastructure_access_county_level.xlsx    # County-level hazard exposure and infrastructure access
 │   ├── panel_data.xlsx                                            # Regression input data (HALE, GDP, population)
 │   ├── future_hazard_exposure/                                    # Projected future hazard exposure (2020–2100)
 │   │   ├── future_exposure_flood_{GCM}_{SSP}_level0.csv          # Country-level flood exposure by GCM and SSP
