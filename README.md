@@ -77,12 +77,12 @@ Projected human exposure to floods and extreme heat from 2020 to 2100 at decadal
 |--------|-------------|---------|
 | `fig1_hazard_exposure.py` | Country-level flood and heat exposure rankings and income-group comparisons | Fig. 1b,c |
 | `fig2_hazard_exposure_infrastructure_access.py` | CHEI–IA relationship, population distribution by category | Fig. 2b–d |
-| `fig3_future_exposure_flood.py` | Future flood exposure trajectories and income-group comparisons | Fig. 3i,k |
-| `fig4_future_exposure_heat.py` | Future heat exposure trajectories and income-group comparisons | Fig. 4i,k |
+| `fig3_future_exposure_flood.py` | Future flood exposure trajectories and income-group comparisons | Fig. 3k,l |
+| `fig4_future_exposure_heat.py` | Future heat exposure trajectories and income-group comparisons | Fig. 4k,l |
 | `fig5_future_exposure.py` | Proportion of counties with high compound exposure under each SSP | Fig. 5j–l |
 | `table1_regression_analysis.py` | Multiple linear regression and ridge regression of HALE on hazard–infrastructure categories | Table 1 |
 
-> **Note:** Global maps (Fig. 1a, 2a, 3a–i, 4a–i, 5a–i) were produced using ArcGIS.
+> **Note:** Global maps (Fig. 1a, 2a, 3a–j, 4a–j, 5a–i) were produced using ArcGIS.
 
 ---
 
