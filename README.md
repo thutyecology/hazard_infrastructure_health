@@ -1,4 +1,4 @@
-# Global Disparities in Compound Hazard Exposure and Infrastructure Access Jeopardize Health Equity
+# Global disparities in compound hazard exposure and infrastructure access jeopardize health equity
 
 This repository contains the data and code supporting the manuscript:
 
