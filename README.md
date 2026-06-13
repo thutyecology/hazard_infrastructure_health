@@ -12,50 +12,49 @@ This repository contains the data and code supporting the manuscript:
 ├── data/
 │   ├── hazard_exposure_infrastructure_access_country_level.xlsx   # Country-level hazard exposure and infrastructure access
 │   ├── hazard_exposure_infrastructure_access_county_level.xlsx    # County-level hazard exposure and infrastructure access
-│   ├── panel_data.xlsx                                            # Regression input data (HALE, GDP, population)
+│   ├── panel_data.xlsx                                            # Regression analysis data
 │   ├── future_hazard_exposure/                                    # Projected future hazard exposure
-│   │   ├── future_exposure_flood_{GCM}_{SSP}_level0.csv          # Country-level flood exposure by GCM and SSP
-│   │   ├── future_exposure_heat_{GCM}_{SSP}_level0.csv           # Country-level heat exposure by GCM and SSP
-│   │   ├── future_exposure_flood_mean_{SSP}_level0.csv           # Multi-model mean flood exposure
-│   │   ├── future_exposure_heat_mean_{SSP}_level0.csv            # Multi-model mean heat exposure
-│   │   └── future_exposure_combined_{SSP}_level2.csv             # County-level combined hazard exposure levels
-├── fig1_hazard_exposure.py
+│   │   ├── future_exposure_flood_{GCM}_{SSP}_level0.csv              # Country-level flood exposure by GCM and SSP
+│   │   ├── future_exposure_heat_{GCM}_{SSP}_level0.csv               # Country-level heat exposure by GCM and SSP
+│   │   ├── future_exposure_flood_mean_{SSP}_level0.csv               # Multi-model mean flood exposure
+│   │   ├── future_exposure_heat_mean_{SSP}_level0.csv                # Multi-model mean heat exposure
+│   │   └── future_exposure_combined_{SSP}_level2.csv                 # County-level combined hazard exposure levels
+├── fig1_hazard_exposure.py                                        # Scripts for main analysis
 ├── fig2_hazard_exposure_infrastructure_access.py
 ├── fig3_future_exposure_flood.py
 ├── fig4_future_exposure_heat.py
 ├── fig5_future_exposure.py
 ├── table1_regression_analysis.py
-└── results/                                                        # Pre-generated figure outputs
+└── results/                                                       # Pre-generated figure outputs
 ```
 
 ---
 
 ## Data Description
 
-### `hazard_exposure_infrastructure_access_country_level.xlsx`
-Country-level summary statistics. Key columns:
+### `hazard_exposure_infrastructure_access_country/county_level.xlsx`
+Country- or county-level summary statistics. Key columns:
 
 | Column | Description |
 |--------|-------------|
-| `UID` | Country unique identifier |
+| `UID` | Country/County unique identifier |
 | `NAME_EN` | Country name |
 | `INCOME_GRP` | World Bank income group |
 | `exposure_flood` | Population-weighted flood exposure (days) averaged over 2000–2018 |
 | `exposure_heat` | Population-weighted extreme heat exposure (days) averaged over 2000–2016 |
 | `flood_level` / `heat_level` | Quartile-based classification (1–4) of flood/heat exposure |
 | `CHEI` | Combined Hazard Exposure Index (1–4) |
-| `IA` | Population-weighted infrastructure access score |
+| `IA` | Population-weighted infrastructure access |
 | `combined_level` | CHEI–IA combined category (11=LL, 12=LH, 21=HL, 22=HH) |
 
 ### `panel_data.xlsx`
-Regression input data. Key columns:
+Regression input data at the country level. Key columns:
 
 | Column | Description |
 |--------|-------------|
-| `HALE` | Health-adjusted life expectancy (2020, from IHME) |
-| `LnGDP` | Natural log of GDP |
-| `LnPop` | Natural log of population |
-| `LnPGDP` | Natural log of GDP per capita |
+| `HALE` | Health-adjusted life expectancy |
+| `LnGDP` | Natural logarithm of GDP |
+| `LnPop` | Natural logarithm of population |
 | `combined_level` | CHEI–IA category (used for one-hot encoding in regression) |
 
 ### `future_hazard_exposure/`
@@ -64,7 +63,7 @@ Projected human exposure to floods and extreme heat from 2020 to 2100 at decadal
 - **GCMs**: `CanESM5`, `CNRM-ESM2-1`, `GFDL-ESM4`, `MPI-ESM1-2-LR`, `UKESM1-0-LL`
 - **Scenarios**: `ssp126`, `ssp245`, `ssp585`
 - **Columns** (level0 files): `UID`, `exp_2020`, `exp_2030`, ..., `exp_2100`
-- **Columns** (combined level2 files): flood/heat exposure values and quartile-based combined exposure levels (`level_2020`, ..., `level_2100`) at the county level
+- **Columns** (level2 files): flood/heat exposure values and quartile-based combined exposure levels (`level_2020`, ..., `level_2100`)
 
 
 ---
