@@ -19,9 +19,6 @@ This repository contains the data and code supporting the manuscript:
 │   │   ├── future_exposure_flood_mean_{SSP}_level0.csv           # Multi-model mean flood exposure
 │   │   ├── future_exposure_heat_mean_{SSP}_level0.csv            # Multi-model mean heat exposure
 │   │   └── future_exposure_combined_{SSP}_level2.csv             # County-level combined hazard exposure levels
-│   └── worldbank_administrative_units/                            # World Bank administrative boundaries (Shapefile)
-│       ├── WB_level0_country.*                                    # Country-level boundaries (Admin 0)
-│       └── WB_level2_county.*                                     # County-level boundaries (Admin 2)
 ├── fig1_hazard_exposure.py
 ├── fig2_hazard_exposure_infrastructure_access.py
 ├── fig3_future_exposure_flood.py
@@ -69,6 +66,7 @@ Projected human exposure to floods and extreme heat from 2020 to 2100 at decadal
 - **Columns** (level0 files): `UID`, `exp_2020`, `exp_2030`, ..., `exp_2100`
 - **Columns** (combined level2 files): flood/heat exposure values and quartile-based combined exposure levels (`level_2020`, ..., `level_2100`) at the county level
 
+
 ---
 
 ## Scripts
@@ -82,7 +80,7 @@ Projected human exposure to floods and extreme heat from 2020 to 2100 at decadal
 | `fig5_future_exposure.py` | Proportion of counties with high compound exposure under each SSP | Fig. 5j–l |
 | `table1_regression_analysis.py` | Multiple linear regression and ridge regression of HALE on hazard–infrastructure categories | Table 1 |
 
-> **Note:** Global maps (Fig. 1a, 2a, 3a–j, 4a–j, 5a–i) were produced using ArcGIS.
+> **Note:** Global maps (Fig. 1a, 2a, 3a–j, 4a–j, 5a–i) were produced using ArcGIS. Administrative Boundaries on country- and county-level boundary shapefiles can be downloaded from the World Bank Official Boundaries dataset (https://datacatalog.worldbank.org/search/dataset/0038272/world-bank-official-boundaries).
 
 ---
 
