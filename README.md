@@ -19,6 +19,8 @@ This repository contains the data and code supporting the manuscript:
 │   │   ├── future_exposure_flood_mean_{SSP}_level0.csv               # Multi-model mean flood exposure
 │   │   ├── future_exposure_heat_mean_{SSP}_level0.csv                # Multi-model mean heat exposure
 │   │   └── future_exposure_combined_{SSP}_level2.csv                 # County-level combined hazard exposure levels
+│   └── worldbank_administrative_units/                            # World Bank administrative boundaries
+│       └── WB_level0_country.shp                                     # Country-level boundaries (Admin 0)
 ├── fig1_hazard_exposure.py                                        # Scripts for main analysis
 ├── fig2_hazard_exposure_infrastructure_access.py
 ├── fig3_future_exposure_flood.py
@@ -27,7 +29,6 @@ This repository contains the data and code supporting the manuscript:
 ├── table1_regression_analysis.py
 └── results/                                                       # Pre-generated figure outputs
 ```
-
 ---
 
 ## Data Description
@@ -79,7 +80,7 @@ Projected human exposure to floods and extreme heat from 2020 to 2100 at decadal
 | `fig5_future_exposure.py` | Proportion of counties with high compound exposure under each SSP | Fig. 5j–l |
 | `table1_regression_analysis.py` | Multiple linear regression and ridge regression of HALE on hazard–infrastructure categories | Table 1 |
 
-> **Note:** Global maps (Fig. 1a, 2a, 3a–j, 4a–j, 5a–i) were produced using ArcGIS. Administrative Boundaries on country- and county-level boundary shapefiles can be downloaded from the World Bank Official Boundaries dataset (https://datacatalog.worldbank.org/search/dataset/0038272/world-bank-official-boundaries).
+> **Note:** Global maps (Fig. 1a, 2a, 3a–j, 4a–j, 5a–i) were produced using ArcGIS. Country-level boundary shapefiles are included under `data/worldbank_administrative_units/`. County-level shapefiles are not included due to file size; they can be downloaded from the [World Bank Official Boundaries dataset](https://datacatalog.worldbank.org/search/dataset/0038272/world-bank-official-boundaries) or requested from the author team.
 
 ---
 
