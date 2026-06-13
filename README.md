@@ -123,7 +123,7 @@ python table1_regression_analysis.py
 
 All scripts use relative paths and expect to be run from the repository root. Output figures are saved to `./results/`.
 
-The GEE scripts (`GEE_code_future_flood_projection` and `GEE_code_future_heat_projection`) are intended to be run in the [Google Earth Engine Code Editor](https://code.earthengine.google.com/). A valid GEE account is required to run these scripts.
+The GEE scripts (`GEE_code_future_flood_projection.js` and `GEE_code_future_heat_projection.js`) are intended to be run in the [Google Earth Engine Code Editor](https://code.earthengine.google.com/). A valid GEE account is required to run these scripts.
 
 ---
 
