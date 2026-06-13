@@ -21,12 +21,14 @@ This repository contains the data and code supporting the manuscript:
 │   │   └── future_exposure_combined_{SSP}_level2.csv                 # County-level combined hazard exposure levels
 │   └── worldbank_administrative_units/                            # World Bank administrative boundaries
 │       └── WB_level0_country.shp                                     # Country-level boundaries (Admin 0)
-├── fig1_hazard_exposure.py                                        # Scripts for main analysis
+├── fig1_hazard_exposure.py                                        # Scripts for main analysis (Figs. 1-5 and Table 1)
 ├── fig2_hazard_exposure_infrastructure_access.py
 ├── fig3_future_exposure_flood.py
 ├── fig4_future_exposure_heat.py
 ├── fig5_future_exposure.py
 ├── table1_regression_analysis.py
+├── GEE_code_future_flood_projection.txt                           # Google Earth Engine scripts for future flood projection
+└── GEE_code_future_heat_projection.txt                            # Google Earth Engine scripts for future heat projection
 └── results/                                                       # Pre-generated figure outputs
 ```
 ---
@@ -79,6 +81,8 @@ Projected human exposure to floods and extreme heat from 2020 to 2100 at decadal
 | `fig4_future_exposure_heat.py` | Future heat exposure trajectories and income-group comparisons | Fig. 4k,l |
 | `fig5_future_exposure.py` | Proportion of counties with high compound exposure under each SSP | Fig. 5j–l |
 | `table1_regression_analysis.py` | Multiple linear regression and ridge regression of HALE on hazard–infrastructure categories | Table 1 |
+| `GEE_code_future_flood_projection.txt` | RF model training and future flood duration projection |  |
+| `GEE_code_future_heat_projection.txt` | RF model training and future extreme heat days projection |  |
 
 > **Note:** Global maps (Fig. 1a, 2a, 3a–j, 4a–j, 5a–i) were produced using ArcGIS. Country-level boundary shapefiles are included under `data/worldbank_administrative_units/`. County-level shapefiles are not included due to file size; they can be downloaded from the [World Bank Official Boundaries dataset](https://datacatalog.worldbank.org/search/dataset/0038272/world-bank-official-boundaries) or requested from the author team.
 
@@ -118,6 +122,8 @@ python table1_regression_analysis.py
 ```
 
 All scripts use relative paths and expect to be run from the repository root. Output figures are saved to `./results/`.
+
+The GEE scripts (`GEE_code_future_flood_projection.txt` and `GEE_code_future_heat_projection.txt`) are intended to be run in the [Google Earth Engine Code Editor](https://code.earthengine.google.com/). A valid GEE account is required to run these scripts.
 
 ---
 
