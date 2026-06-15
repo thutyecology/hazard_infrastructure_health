@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Fig. 1: Global human exposure to combined hazards of flood and extreme heat between 2000-2018.
+Fig. 1: Global human exposure to flood and extreme heat.
 
 This script generates:
 1. Fig. 1b: Country-level scatterplot of flood and heat exposure rankings.
