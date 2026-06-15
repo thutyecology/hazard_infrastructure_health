@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Fig. 2: Spatial relationship between the combined hazard exposure index (CHEI) and infrastructure access (IA).
+Fig. 2: Spatial relationship between the compound hazard exposure index (CHEI) and infrastructure access (IA).
 
 This script generates:
 1. Fig. 2b: Country-level scatterplot of CHEI and IA rankings.
@@ -68,7 +68,7 @@ sns.scatterplot(
     legend=False,
 )
 
-plt.xlabel('Combined hazard exposure index (#)')
+plt.xlabel('Compound hazard exposure index (#)')
 plt.ylabel('Infrastructure access (#)')
 plt.ylim(-5, 195)
 plt.xlim(-5, 180)
