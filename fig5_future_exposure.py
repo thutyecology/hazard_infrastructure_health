@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Fig. 5: Projected human exposure to combined hazards of flood and extreme heat.
+Fig. 5: Projected human exposure to compound hazards of flood and extreme heat.
 
 This script generates:
 1. Fig. 5j-l: Lineplots of the proportion of high flood-high heat exposure areas under SSP scenarios.
